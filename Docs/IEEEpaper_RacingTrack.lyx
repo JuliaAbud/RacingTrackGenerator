@@ -1,0 +1,3388 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options journal
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to journals of the
+ Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE conference articles, see the template file 
+\emph on
+IEEEtran-Conference.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Racing Track Levels as Procedural Content Generation using Unity3D Engine
+\end_layout
+
+\begin_layout Author
+Julia
+\begin_inset space ~
+\end_inset
+
+Alejandra
+\begin_inset space ~
+\end_inset
+
+Rodriguez-Abud
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Julia Alejandra Rodriguez-Abud is with the Department of Computer Science,
+ Cinvestav, Guadalajara, México, e-mail: 
+\begin_inset CommandInset href
+LatexCommand href
+target "julia.rodriguez@cinvestav.mx"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Special Paper Notice
+Introduction to Machine Learning
+\end_layout
+
+\begin_layout Page headings
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Journal of XXX
+\end_layout
+
+\end_inset
+
+Julia Alejandra Rodriguez-Abud: Racing Track Levels as Procedural Content
+ Generation using Unity3D Engine
+\end_layout
+
+\begin_layout Abstract
+This document describes the project developed for the 2021 Cinvestav Guadalajara
+ Introduction to Machine Learning class given by Dr.
+ Andres Mendez Vazquez.
+ This project explored a practical implementation of machine learning techniques
+ for the use in the videogame industry.
+ Mor specificcally exploring the use of ML-Agents for Procedural content
+ generation of levels.
+ This document describes the routes taken and decisions made to be able
+ to attend to the PCG objective as well as the things learned and the possible
+ future approaches given the limitations discovered in this project process.
+\end_layout
+
+\begin_layout Keywords
+Machine Learning, Unity3D, Procedural Content Generation, Game Design
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Paragraph Start
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+
+rocedural
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\series bold
+
+\backslash
+IEEEPARstart
+\series default
+ command is needed in the first paragraph of the document.
+\end_layout
+
+\end_inset
+
+ Content Generation is an important part of the video game industry, as
+ it allows the improvement and optimization of the production pipeline.
+\end_layout
+
+\begin_layout Standard
+Manually creating content is an expensive and time consuming task that can
+ be minimized to allow the art team to focus on other parts of the creative
+ process and letting the computer create some of the assets.
+ Many Machine Learning techniques requiere of previously accumulated data
+ to use as priors and learn based on this information.
+ But because of the nature of videogames, specially small indie productions
+ we need to make sure to generate content on the go while in the development
+ stage when there are not many created assets to work with.
+ The Machine Learning agents need to be allowed to learn to create the content
+ by itself or with minumum help as fast as possible in the production process.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+For a game in development
+\series bold
+ there may not be content to learn from
+\series default
+, because the content may not be made yet.
+ In fact, not having to produce all of that content may be a prime reason
+ for wanting to train a content generator in the first place.
+ What would be desirable here would be a way of training a generator based
+ on only a few pieces of hand-designed content, such as items, levels, or
+ characters.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu2021"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For this project the plan is to use Machine Learning in the Unity3D Engine
+ to help in the level design process of a 
+\series bold
+car racing game
+\series default
+.
+ The generated racing tracks would need to be playable, have a proper 3d
+ mesh with it's collider.
+ And also to consider the functionality of this types of games: it should
+ fully complete a lap and close within itself, not being extremelly short
+ and have a well defined main route.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Giacomello2018"
+literal "false"
+
+\end_inset
+
+ (ADD TEXT)
+\end_layout
+
+\begin_layout Subsection
+Requirements
+\end_layout
+
+\begin_layout Standard
+The files for this project can be found in the following GitHub repository
+ : 
+\end_layout
+
+\begin_layout Standard
+https://github.com/JuliaAbud/RacingTrackGenerator 
+\end_layout
+
+\begin_layout Itemize
+Unity Version 2020.3.6f1
+\end_layout
+
+\begin_layout Itemize
+Unity Packages used: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ML Agents 2.1.0-exp.1 (Preview package) https://github.com/Unity-Technologies/ml-age
+nts/blob/release_18_docs/docs/Installation.md 
+\end_layout
+
+\begin_layout Itemize
+PathCreator
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pytorch 1.7.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Result_auto03_a.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unity's-Training-environment"
+
+\end_inset
+
+Unity's Training environment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Unity3D Engine
+\end_layout
+
+\begin_layout Standard
+Unity is a real-time 3D development platform that consists of a rendering
+ and physics engine as well as a graphical user interface called the Unity
+ Editor.
+ Unity has received widespread adoption in the gaming, AEC (Architecture,
+ Engineering, Construction), auto, and film industries and is used by a
+ large community of game developers to make a variety of interactive simulations
+, ranging from small mobile and browser-based games to high-budget console
+ games and AR/VR experiences.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Juliani2018"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+ML-Agents Toolkit
+\end_layout
+
+\begin_layout Standard
+The Unity Machine Learning Agents Toolkit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Juliani2018"
+literal "false"
+
+\end_inset
+
+ is an open-source project that enables projects as games and simulations
+ to serve as environments for training intelligent agents.
+ The Unity package ML-Agents allows the use of Machine Learning techniques
+ such as Reinforncement Learning or Imitation Learning.
+ For reinforncement learning it is used PPO (Proximal Policy Optimization),
+ and for the immitation learning is BC (Behavioral Cloning).
+ ML-Agents allows using a learning environment that connects which communicates
+ to a simple Python API.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unity's-Learning-environment"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MLAgents_.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unity's-Learning-environment"
+
+\end_inset
+
+Unity's Learning environment description
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+First Exercise with ML-Agents
+\end_layout
+
+\begin_layout Standard
+As a starting point a very simple exercise was done to get familiar with
+ the process of designing a training environment in Unity3D.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:First-exercise"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Set-up: A movement task where the agent must move to the reward.
+ The reward and the agent have random positions at the start of each episode.
+\end_layout
+
+\begin_layout Itemize
+Goal: Move towards the reward (white ball) and don't fall from the platform.
+\end_layout
+
+\begin_layout Itemize
+Agents: The environment contains one agent.
+ 
+\end_layout
+
+\begin_layout Itemize
+Agent Reward Function:+1.0 for colliding with the white ball.
+ -1.0 for colliding with the border of the platform.
+ 
+\end_layout
+
+\begin_layout Itemize
+Behavior Parameters: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vector Observation space: Two Vector3 variables corresponding to agent position
+ and target position.
+ 
+\end_layout
+
+\begin_layout Itemize
+Actions: 2 discrete actions (Move left/right ; Move up/down)
+\end_layout
+
+\begin_layout Itemize
+Visual Observations: None Float 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MLAgents_ejercicio0.png
+	lyxscale 70
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:First-exercise"
+
+\end_inset
+
+First exercise
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Suggested routes
+\end_layout
+
+\begin_layout Standard
+To solve the objective of generating functional racing tracks levels there
+ are several constraints that needed to be considered so they ca be used
+ in a racing game.
+\end_layout
+
+\begin_layout Standard
+In this section we will describe possible ways encountered to solve the
+ creation of the racetrack and the decision process made toward the route
+ that was taken.
+ This is important as it is the base to define the data that would be collected
+ and fed to out ML Agent as input.
+\end_layout
+
+\begin_layout Subsection
+Assembled pieces vs Bezier curve
+\end_layout
+
+\begin_layout Standard
+The first decision to make was the way that the path creation would be handled,
+ even if it was generated by a human.
+ There were two routes explored for this Assembled pieces and Mesh generated
+ from a bezier curve.
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+assembled pieces
+\series default
+ pipeline proposes having several prefabs that can be put together with
+ everything needed (mesh, the material with textures, the colliders, etc).
+ This way we would have prefabs for all the possible directions, such as:
+ forward, small turn, big turn, slope, etc.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Assembled-pieces"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Having 
+\begin_inset Formula $4n$
+\end_inset
+
+ possible setups for each tile.
+ For each piece we have four possible rotations in 
+\begin_inset Formula $0°,90°,180°$
+\end_inset
+
+ and 
+\begin_inset Formula $270°$
+\end_inset
+
+ degrees.
+\end_layout
+
+\begin_layout Standard
+The original idea for this (not implemented) process is for each one of
+ the pieces to have a code from 1 to n.
+ Leaving 0 for a part of the scene without any piece.
+ And with the help of some cellular automata generate and fill a matrix
+ that would help us to do some assembly of the tracks.
+\end_layout
+
+\begin_layout Standard
+The problem with this approach is that for it to be tried out easily, all
+ the pieces would need to have a predetermined size to help assemble them
+ with the help of a matrix.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MLAgents_Assembledpieces.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Assembled-pieces"
+
+\end_inset
+
+Assembled pieces
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+bezier curve
+\series default
+ is a better solution that allows more freedom for the track design and
+ route.
+ The bezier curve can be implemented with as little as with a list of Vector3's
+ describing the control points positions that will form our curve.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bezier-curve-tool"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This way we can make sure that the track fully loops by connecting the
+ last and the first control point.
+ 
+\end_layout
+
+\begin_layout Standard
+This process consists on generating a random set of points as Vector3 and
+ allow them to be connected.
+ With this bezier curve created, we can use a tool to extrapolate the mesh
+ to make it visible and use it to apply a material and a collider to allow
+ it to be usable as a Racing Track.
+\end_layout
+
+\begin_layout Standard
+This is the process that seems to give a nicer result, so it was the one
+ explored with our Generator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MLAgents_BezierCurve.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bezier-curve-tool"
+
+\end_inset
+
+Bezier curve tool.
+ Consists of a series of control points positions described as Vector3 xyz
+ floats.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+XYZ-space vs XZ-space
+\end_layout
+
+\begin_layout Standard
+Another decision to make was the use of the 3D space as there is the possibility
+ to actually use the three axis XYZ for our control points positions.
+ Creating the racing track in a XYZ-space is far more interesting as it
+ can create more complex routes but at the same time it becomes harder to
+ control properly (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:1)-XYZ--space"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) as there are many more variables to consider as what qualifies as a 
+\begin_inset Quotes eld
+\end_inset
+
+valid
+\begin_inset Quotes erd
+\end_inset
+
+ racing track in the classification process.
+ 
+\end_layout
+
+\begin_layout Standard
+The XZ-space is more simple, and is good enough for our objective as it
+ can still be fully playable.
+ The main specification to focus is the avoidance of overlapping sections
+ in the racetrack path.
+ The decision is to use just the XZ-space for the generation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MLAgents_BezierCurveMesh.png
+	lyxscale 40
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename space_xz.png
+	lyxscale 30
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1)-XYZ--space"
+
+\end_inset
+
+1) XYZ- space generated track.
+ 2) XZ-space generated track.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+GANs
+\end_layout
+
+\begin_layout Standard
+The starting idea was to use Generative Adversarial Networks to generate
+ the racing tracks and developing a Generator and a Discriminator to keep
+ improving the generation process.
+ As 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu2021"
+literal "false"
+
+\end_inset
+
+ suggests, the PCG of 3D map levels and 2d map level generation is usually
+ approached with an Adversarial Learning technique.
+\end_layout
+
+\begin_layout Standard
+A GAN consists of two Neural Networks competing with each other.
+ The Generator G trained to minimize
+\begin_inset Formula $log(1-D(G(z)))$
+\end_inset
+
+and a Discriminator D trained to maximize the probability of assigning a
+ correct label.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Generative-Adversarial-Network"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) D and G play the following two-player minimax game with value function
+ 
+\begin_inset Formula $V(G,D)$
+\end_inset
+
+: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goodfellow2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\begin_inset Formula $\min\max(D,G)=\mathbb{E}_{x∼p_{data}(x)}[logD(x)]+\mathbb{E}_{z∼p_{z}(z)}[log(1−D(G(z)))]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Altough because of the nature of the GAN structure and our limitations with
+ the ML-Agents algorithms, it was decided to not take the GAN route, and
+ just take the generative nature of it and train it with a 
+\begin_inset Quotes eld
+\end_inset
+
+discriminator algorithm
+\begin_inset Quotes erd
+\end_inset
+
+ that is not actually a Neural Network.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename GAN.png
+	lyxscale 70
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Generative-Adversarial-Network"
+
+\end_inset
+
+Generative Adversarial Network structure showing the Generator G that works
+ with some noise z, and the Discriminator D that work with the input of
+ the prior data Xtrain and the generated data G(z) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hayes2019"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Implementation 
+\end_layout
+
+\begin_layout Standard
+Exploring the Procedural Content generation (PCG) of levels using ML-Agents
+ in Unity limits the problem solving to the use of reinfoncement and/or
+ imitation learning.
+ And because of this limitations we will adapt the general idea and using
+ a Generative Neural Network trained with Reinforcement Learning and a Discrimin
+ator algorithm designed for this problem (not a NN).
+ By doing this we are no longer taking the Adversarial Learning route.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Reinforcement learning is commonly used to learn to play games, which makes
+ sense as the problem of playing a game can easily be cast as a reinforcement
+ learning problem; the action space is simply the actions available to the
+ agent, and most games have a score or similar which can be used to provide
+ a reward signal.
+ In contrast, problems of designing games or game content are most of- ten
+ cast as optimization processes, where a measure of quality is used as an
+ objective function, or sometimes as supervised learning problems
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Khalifa2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ML-Agents framework uses a reinforcement learning technique called Proximal
+ Policy Optimization (PPO).
+ PPO uses a neural network to approximate the ideal function that maps an
+ agent's observations to the best action an agent can take in a given state.
+ 
+\end_layout
+
+\begin_layout Subsection
+Generator
+\end_layout
+
+\begin_layout Standard
+The technique used to generate our racetrack is by generating the control
+ points in the bezier curve to then extrapolate a mesh to be used to render
+ the path and create the collider.
+ 
+\end_layout
+
+\begin_layout Standard
+The data that would be used to train our generator will be a list of Vector
+ 3 points that provide the positions.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Control points generation
+\end_layout
+
+\begin_layout Standard
+The bezier control points are defined based on the last point generated
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $y$
+\end_inset
+
+ pos will be set up to be on 0, as right now we are considering for our
+ track to be on a plane ground.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $max$
+\end_inset
+
+ max distance from the last generated point
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $prevP$
+\end_inset
+
+ keeps track of the last Vector3 position
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $newP=prevP+(rnd(-max,max),0,rnd(-max,max))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Description of the Neural Network
+\end_layout
+
+\begin_layout Standard
+A Proximal Policy Optimization using a Neural network that consists of a
+ vector with 6 floats as inputs as described in (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Neural-network-proposed"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and an output with 3 floats that will help to position the next control
+ point.
+ This NN is trained with PPO and has 2 layers.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RL_00_b.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Neural-network-proposed"
+
+\end_inset
+
+Neural network proposed for the Generator.
+ Its a PPO that receives 6 floats as input : prevPos.x, prevPos.y, prevPos.z,
+ currentLength, randomLength and Intersections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Hyperparameters-used-for"
+
+\end_inset
+
+Hyperparameters used for the training of the Generative model TrackGenerator
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="32" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+trainer_type: ppo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hyperparameters:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+batch_size: 1024
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+buffer_size: 10240
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+learning_rate: 0.0003
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beta: 0.005
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+epsilon: 0.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+lambd: 0.95
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+num_epoch: 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+learning_rate_schedule: linear
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+network_settings:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+normalize: False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hidden_units: 128
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+num_layers: 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vis_encode_type: simple
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+memory: None
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+goal_conditioning_type: hyper
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reward_signals: extrinsic:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+gamma: 0.99
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+strength: 1.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+normalize: False
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reward_signals: network_settings:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hidden_units: 128
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+num_layers: 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vis_encode_type: simple
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+memory: None
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+goal_conditioning_type: hyper
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+init_path: None
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+keep_checkpoints: 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+checkpoint_interval: 500000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+max_steps: 500000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+time_horizon: 64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+summary_freq: 50000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+threaded: False
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+self_play: None
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+behavioral_cloning: None
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Description of the training environment
+\end_layout
+
+\begin_layout Standard
+The training environment used had the following hyperparameters (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Hyperparameters-used-for"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ And the PPO Reinforncement Learning structure is described with the following
+ information and figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Reinforcement-Learning"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Set-up: At the start of each episode we start with a point in Vector3 zero,
+ and start gradually adding up new controls in random positions relative
+ to the last point generated.
+ 
+\end_layout
+
+\begin_layout Itemize
+Goal: Generate a racing track that is playable by not intersecting within
+ itself
+\end_layout
+
+\begin_layout Itemize
+Agents: The environment contains one agent.
+ 
+\end_layout
+
+\begin_layout Itemize
+Agent Reward Function: (minimum of -1, and maximum of +1.8 )
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
++0.1 when generating a new control point (more than 2 and less than 10) Adding
+ of a bezier control point, causes to give a small reward (This motivates
+ it to have more points and shapes) 
+\end_layout
+
+\begin_layout Itemize
++1.0 accepted final track 
+\end_layout
+
+\begin_layout Itemize
+-1.0 rejected final track 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Behavior Parameters: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vector Observation space: Vector3 variable corresponding to prevPos control
+ position, Integers corresponding to randomLength currentLength and Intersection
+s 
+\end_layout
+
+\begin_layout Itemize
+Actions: random generation of 3 normalized numbers that will be used for
+ defining the next position
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RL_01.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reinforcement-Learning"
+
+\end_inset
+
+Reinforcement Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Manual 
+\begin_inset Quotes eld
+\end_inset
+
+Discriminator
+\begin_inset Quotes erd
+\end_inset
+
+ Test
+\end_layout
+
+\begin_layout Standard
+The objective of our discriminator is to classify if our racing track is
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+valid one
+\begin_inset Quotes erd
+\end_inset
+
+.
+ But before trying out to do an automatic training, a manual classification
+ by the user was implemented using
+\series bold
+ InputKey.Q
+\series default
+ for accepting the track and
+\series bold
+ InputKey.W
+\series default
+ for rejecting the track The objective was to quickly proove if the route
+ taken with our generator was something feasible, and verify with a few
+ trials if our Generator NN is actually improving before implementing an
+ algorithm to do the automatic decision.
+\end_layout
+
+\begin_layout Standard
+This test was done for around 30 minutes and with approximately 1500 episodes.
+ This tiny result showed that this route was worth pursuing.
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Manual-classification"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename AerialView.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aerial-view-with"
+
+\end_inset
+
+
+\series bold
+ 
+\series default
+Aerial view with B/W camera to facilitate the manual process of visualizing
+ if there are any intersections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Result_manual00.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Manual-classification"
+
+\end_inset
+
+Results of the manual classification
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Automatic 
+\begin_inset Quotes eld
+\end_inset
+
+Discriminator
+\begin_inset Quotes erd
+\end_inset
+
+ Algorithm
+\end_layout
+
+\begin_layout Standard
+This algorithm has the objective of defining if the given path doesn't have
+ any intersections within itself, this nonintersecting polygon is considered
+ a 
+\series bold
+Simple closed path.
+ 
+\series default
+For this we verify if there exists any line segment intersection given every
+ pair of segments that form our path.
+ The line segment intersection problem is one of the most fundamental problems
+ in computational geometry.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Giblin2001"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The approach for this algorithm is based in the notion of orientation of
+ an ordered triplet of points in the plane.
+ 
+\end_layout
+
+\begin_layout Standard
+And with the function that checks if there is an intersection for any two
+ given segments, we implemented a small function that counts the amount
+ of intersections in the given path comparing once each pair of segments.
+ The amount of intersections is an integer that is also fed to our neural
+ network.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename SegmentIntersection00_b.png
+	lyxscale 50
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename SegmentIntersection01_b.png
+	lyxscale 50
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+Top) 
+\series default
+Line Segment Intersection.
+ 
+\series bold
+Bottom)
+\series default
+ The 
+\series bold
+orientation
+\series default
+ of an ordered triplet of points in the plane can be: counterclockwise,
+ clockwise or collinear 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+OnSegment 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Require:
+\series default
+ Points p,q,r
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Ensure
+\series default
+: Given three colinear points p, q, r
+\end_layout
+
+\begin_layout Plain Layout
+the function checks if point q lies on line segment 'pr'
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+if
+\series default
+ ( 
+\begin_inset Formula $q.x\leq\max\left(p.x,r.x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q.x\geq\min\left(p.x,r.x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q.y\leq\max\left(p.y,r.y\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q.y\geq\min\left(p.y,r.y\right)$
+\end_inset
+
+ )
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return
+\series default
+ true
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return
+\series default
+ false
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Orientation 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Require:
+\series default
+ Points p,q,r
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Ensure: 
+\series default
+To find orientation of ordered triplet (p, q, r)
+\end_layout
+
+\begin_layout LyX-Code
+val = 
+\begin_inset Formula $(q.y-p.y)*(r.x-q.x)-(q.x-p.x)*(r.y-q.y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+if 
+\series default
+(
+\begin_inset Formula $val==0$
+\end_inset
+
+) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+0 // colinear
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+elif 
+\series default
+(
+\begin_inset Formula $val>0$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+1 // clock wise
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+else
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+2 // counterclock wise
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DoIntersect
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Require:
+\series default
+ Points p1 and q1 (First segment) and points p2 and q2 (Second segment)
+\end_layout
+
+\begin_layout LyX-Code
+o1 = orientation(p1, q1, p2)
+\end_layout
+
+\begin_layout LyX-Code
+o2 = orientation(p1, q1, q2)
+\end_layout
+
+\begin_layout LyX-Code
+o3 = orientation(p2, q2, p1)
+\end_layout
+
+\begin_layout LyX-Code
+o4 = orientation(p2, q2, q1)
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\emph on
+// General case
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+if 
+\series default
+(o1 != o2 and o3 != o4)
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+true
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\emph on
+// Special Cases 
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\emph on
+//
+\series default
+ colinear triplet and point lies on segment
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+if
+\series default
+ (o1 == 0 and onSegment(p1, 
+\emph on
+p2
+\emph default
+, q1)) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+true
+\series bold
+ 
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+if
+\series default
+ (o2 == 0 and onSegment(p1, 
+\emph on
+q2
+\emph default
+, q1))
+\series bold
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+true
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+if
+\series default
+ (o3 == 0 and onSegment(p2, 
+\emph on
+p1
+\emph default
+, q2)) 
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+true
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+if
+\series default
+ (o4 == 0 and onSegment(p2, 
+\emph on
+q1
+\emph default
+, q2))
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+true
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+// Doesn't fall in any of the above cases
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+return 
+\series default
+false 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Accumulative-results-of"
+
+\end_inset
+
+Accumulative results of generated tracks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total tracks generated
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35267
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Accepted tracks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29752
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rejected tracks
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5514
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After running training the NN for the generation over 35k racing tracks,
+ (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Accumulative-results-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) most of the tracks where nonintersection paths that where accepted by
+ our algorithm.
+ And the improvement of the quality of the tracks generated can be seen
+ in the cumulative mean reward over time as it went from 0.585 to a 1.730
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cumulative-reward-during"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Being 1.9 the possible maximum reward gained by a track; without intersections
+ and with more than 10 control points (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:TrackGenerator.onnx-Training-Dat"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Result_auto01_00.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cumulative-reward-during"
+
+\end_inset
+
+Cumulative reward during the training session.
+ Being 0.585 at the first 5k steps and finishing in 1.730 at 35k steps.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:TrackGenerator.onnx-Training-Dat"
+
+\end_inset
+
+TrackGenerator.onnx Training Data 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Step
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time elapsed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mean reward
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Standard Deviation of reward
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+594.235 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.585
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.924
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1252.818 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.035
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.921
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1905.642 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.466
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.695
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2566.427 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.660
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.447
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3234.126 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.706
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.348
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3920.747 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.726
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.261
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4610.893 s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.730
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.263
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Schreenshot00.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename screenshot01.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename screenshot02.png
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ResultImage"
+
+\end_inset
+
+
+\series bold
+Top )
+\series default
+ In-engine view showing the bezier curve and its control points.
+ 
+\series bold
+Middle) 
+\series default
+Full view of the track.
+ 
+\series bold
+Bottom) 
+\series default
+First person view of the track integrated in an environment.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+The project currently doesn't consider the width when extrapolating the
+ mesh, so there are situations considered 
+\begin_inset Quotes eld
+\end_inset
+
+approved
+\begin_inset Quotes erd
+\end_inset
+
+ because they don't intersect but they can still touch each other ever so
+ slightly.
+ 
+\end_layout
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Standard
+I would like to thank Dr.
+ Andres Mendez-Vazquez for being my mentor for the length of the development
+ of this project.
+ I would also like to thank my classmates Carlos Cardenas-Ruiz and Emilio
+ Tonix-Gleason for their support, comments and suggestions for this development
+ process.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "IEEEabrv,IEEEexample,Biblio0"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Biography
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Julia.png
+	width 1in
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Julia Alejandra Rodriguez-Abud
+\end_layout
+
+\end_inset
+
+ has a Digital Arts major.
+ She has worked as a software developer and currently is pursuing her M.Sc.
+ at Cinvestav Guadalajara.
+ 
+\end_layout
+
+\end_body
+\end_document
